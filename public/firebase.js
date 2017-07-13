@@ -15,7 +15,7 @@ $('#submit').click(function(e)  {
     $(id).val('');
   });
 
-  var getLatLongRequest = 'https://maps.googleapis.com/maps/api/geocode/json?address='+ encodeURIComponent(personData.location) + '&key=AIzaSyA4AQA_ZJpqGeHF5S2d4T1wii7mgeJD2QI';
+  var getLatLongRequest = 'https://maps.googleapis.com/maps/api/geocode/json?address='+ encodeURIComponent(personData.location) + '&key={SET_KEY}';
 
   $.getJSON(getLatLongRequest, function(data) {
     var results = data.results[0];
